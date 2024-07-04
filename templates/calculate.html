@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="calculate" method="post">
+    <input type="number" name="a1">
+    <input type="number" name="a2">
+    <button type="submit" name="action" value="add">add</button>
+    <button type="submit" name="action" value="sub">sub</button>
+    <button type="submit" name="action" value="mul">mul</button>
+    <button type="submit" name="action" value="div">div</button>
+    <button type="submit" name="action" value="up">up</button>
+    <button type="submit" name="action" value="%div">%div</button>
+</form>
+{% if natija %}
+    <h1>Result: {{natija}}</h1>
+{% endif %}
+</body>
+</html>
